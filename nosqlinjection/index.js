@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('Vista'));
 
-mongoose.connect('mongodb+srv://student:dPgF0sb0ADBUZHCI@clusterunam.6pxlppf.mongodb.net/vulnerableApp?retryWrites=true&w=majority&appName=ClusterUNAM', {
+mongoose.connect('mongodb+srv://<db_username>:<db_password>@clusterunam.6pxlppf.mongodb.net/?retryWrites=true&w=majority&appName=ClusterUNAM', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
